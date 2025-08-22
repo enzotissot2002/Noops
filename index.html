@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon Site</title>
+  <meta name="description" content="Un site simple pour publier des photos et des articles.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit">Mon Site</a></div>
+      <div>
+        <a href="photos.html">Photos</a>
+        <a href="articles.html">Articles</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="photos.html" class="cta">Publier</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Bienvenue 👋</h1>
+    <p class="lead">Ceci est un site <strong>100% statique</strong> facile à mettre en ligne. Ajoutez vos photos et vos pages sans base de données ni serveur.</p>
+    <p class="muted">Modifiez ce texte dans <code>index.html</code>.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>📸 Galerie photos</h3>
+      <p>Mettez vos images dans le dossier <code>/photos</code> puis éditez <code>photos.html</code> pour les afficher.</p>
+      <p class="mt-1"><a href="photos.html">Voir la galerie →</a></p>
+    </div>
+    <div class="card">
+      <h3>✍️ Articles</h3>
+      <p>Créez des fichiers HTML dans <code>/posts</code>, puis ajoutez un lien dans <code>articles.html</code>.</p>
+      <p class="mt-1"><a href="articles.html">Voir les articles →</a></p>
+    </div>
+    <div class="card">
+      <h3>🔒 RGPD & Mentions</h3>
+      <p>Complétez la page <code>mentions-legales.html</code> avant publication publique.</p>
+      <p class="mt-1"><a href="mentions-legales.html">Ouvrir la page →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Mon Site — Fait avec un starter statique.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

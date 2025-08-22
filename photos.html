@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos • Mon Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit">Mon Site</a></div>
+      <div>
+        <a href="photos.html">Photos</a>
+        <a href="articles.html">Articles</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="photos.html" class="cta">Publier</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>📸 Galerie</h1>
+  <p class="muted">Ajoutez vos images dans le dossier <code>/photos</code> puis dupliquez un bloc <code>&lt;figure&gt;</code> ci‑dessous.</p>
+
+  <div class="grid mt-2">
+    <!-- Dupliquez ces blocs pour vos images -->
+    <figure>
+      <img src="photos/photo1.svg" alt="Image 1">
+      <figcaption>Légende de l'image 1</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/photo2.svg" alt="Image 2">
+      <figcaption>Légende de l'image 2</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/photo3.svg" alt="Image 3">
+      <figcaption>Légende de l'image 3</figcaption>
+    </figure>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Mon Site</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
