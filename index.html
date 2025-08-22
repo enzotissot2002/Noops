@@ -6,12 +6,9 @@
   <title>Mon Site</title>
   <meta name="description" content="Un site simple pour publier des photos et des articles.">
   <link rel="stylesheet" href="styles.css">
+  <!-- AOS CSS doit rester dans le head -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 <body>
 <header>
   <div class="container">
@@ -62,5 +59,8 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<!-- Les scripts JS en bas du body -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
