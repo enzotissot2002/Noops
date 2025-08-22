@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon premier article • Mon Site</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand"><a href="../index.html" style="text-decoration:none;color:inherit">Mon Site</a></div>
+      <div>
+        <a href="../photos.html">Photos</a>
+        <a href="../articles.html">Articles</a>
+        <a href="../mentions-legales.html">Mentions légales</a>
+        <a href="../photos.html" class="cta">Publier</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container prose">
+  <h1>Mon premier article</h1>
+  <p class="muted">Publié le 1 janvier 2025</p>
+
+  <p>Ceci est un exemple d'article. Vous pouvez écrire en HTML simple : titres, paragraphes, images, liens, etc.</p>
+
+  <h2>Une section</h2>
+  <p>Ajoutez du contenu, des listes :</p>
+  <ul>
+    <li>Point 1</li>
+    <li>Point 2</li>
+    <li>Point 3</li>
+  </ul>
+
+  <p>Image dans l'article :</p>
+  <p><img src="../photos/photo1.svg" alt="Exemple" style="max-width:100%;border:1px solid #e5e7eb;border-radius:.5rem"></p>
+
+  <p>Revenir à la <a href="../articles.html">liste des articles</a>.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Mon Site</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
